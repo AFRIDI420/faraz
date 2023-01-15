@@ -460,9 +460,9 @@ def rcrack(uid,pwx,tl):
 
 			"login":"Log In"}
 
-			header_freefb = {'authority': 'web.facebook.com'
+			header_freefb = {'authority': 'web.facebook.com',
 
-            'method':'GET',
+           'method':'GET',
 
             'path':'/?tbua=1',
 
@@ -474,9 +474,9 @@ def rcrack(uid,pwx,tl):
 
             'cache-control': 'max-age=0',
 
-             # 'cookie': 'datr=X4nCYzUNm42s8VoAmwVISJIL; sb=X4nCY7J-ZS9RRTEl2046fmri; dpr=2.4750001430511475; m_pixel_ratio=2.4750001430511475; fr=0G5DHrfcH504g8zYb..Bjwolf.5h.AAA.0.0.Bjw4wS.AWX_owLoTzQ; wd=980x1872',
+    # 'cookie': 'datr=X4nCYzUNm42s8VoAmwVISJIL; sb=X4nCY7J-ZS9RRTEl2046fmri; dpr=2.4750001430511475; m_pixel_ratio=2.4750001430511475; fr=0G5DHrfcH504g8zYb..Bjwolf.5h.AAA.0.0.Bjw4wS.AWX_owLoTzQ; wd=980x1872',
 
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+           'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
 
             'sec-ch-ua-mobile': '?0',
 
